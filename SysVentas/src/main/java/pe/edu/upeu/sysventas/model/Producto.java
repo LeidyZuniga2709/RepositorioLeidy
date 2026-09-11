@@ -17,7 +17,7 @@ import pe.edu.upeu.sysventas.enums.TipoProducto;
 public class Producto {
 
     private Long idProducto;
-    @NotBlank(message = "El nombre del producto es obligatorio")
+    @NotBlank (message = "El nombre del producto es obligatorio")
     private String nombre;
 
     private TipoProducto tipoProducto;

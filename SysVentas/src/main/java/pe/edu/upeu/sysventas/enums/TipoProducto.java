@@ -1,12 +1,15 @@
 package pe.edu.upeu.sysventas.enums;
 
-public enum TipoProducto {
-    Preparado("Preparado"),
-    Producto("Producto"),
-    Servicio("Servicio");
+import lombok.Getter;
 
-    String descripciòn;
-    TipoProducto(String descripciòn){
-        this.descripciòn=descripciòn;
+@Getter
+public enum TipoProducto {
+    PRODUCTO("Producto"),
+    PREPARADO("Preparado"),
+    SERVICIO("Servicio");
+
+    String descripcion;
+    TipoProducto(String descripcion ){
+        this.descripcion=descripcion;
     }
 }
